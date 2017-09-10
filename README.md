@@ -1,4 +1,4 @@
-# Team viewer
+# Github Team viewer
 
 Github Team Viewer is built using React and Bootstrap. It uses Github APIs to find about the users in a github org and the details of individual members.
 
@@ -17,7 +17,7 @@ git clone git@github.com:vinitkumar/github-team-viewer.git
 yarn install
 yarn start
 
-# In order to create production buid:
+# In order to create production build:
 yarn build
 ```
 
