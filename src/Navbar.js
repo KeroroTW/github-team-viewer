@@ -4,7 +4,7 @@ class Navbar extends Component {
   render() {
     return (
       <div>
-        <h1>Github Team Viewer</h1>
+        <h4>Enter the organization name below:</h4>
       </div>
     );
   }

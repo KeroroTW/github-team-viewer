@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
-import Navbar from "./Navbar";
 import SearchInput from './SearchInput';
 import GithubUserList from './GithubUserList';
 
@@ -16,9 +14,10 @@ class App extends Component {
   }
 
   handleSearchChange(event)  {
-    console.log(event.target.value);
+    // set it all empty when a new org is searched
+    this.setState({'github': []});
     let org = event.target.value;
-    let githubAPIURL = 'https://api.github.com/orgs/' + org + '/members?client_id=e3930cf94c772ba10ef1&&client_secret=fb1284b1874444a9c0c55c963092f836596ecc56';
+    let githubAPIURL = 'https://api.github.com/orgs/' + org + '/members?client_id=2ee21061ca9ec6085e38&&client_secret=f0f906d1f5f02623a010884370655da4595d301d';
     var self = this;
     fetch(githubAPIURL).then(function (response) {
       return response.json();
@@ -34,12 +33,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Navbar/>
-        <SearchInput textChange={this.handleSearchChange.bind(this)}/>
         <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
+          <h4>Welcome to Team Viewer</h4>
         </div>
+        <SearchInput textChange={this.handleSearchChange.bind(this)}/>
         <GithubUserList datalist={this.state.github}/>
       </div>
     );

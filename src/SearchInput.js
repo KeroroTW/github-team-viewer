@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-
+import './SearchInput.css';
 
 class SearchInput extends Component  {
   handleChange =  (event) => {
@@ -10,7 +10,7 @@ class SearchInput extends Component  {
     return (
       <div className="component-search-input">
         <div>
-          <input onChangeCapture={this.handleChange} />
+          <input className="form-control" placeholder="Enter the org name such as: github" onChangeCapture={this.handleChange} />
         </div>
       </div>
     )
