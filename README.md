@@ -2,6 +2,9 @@
 
 Github Team Viewer is built using React and Bootstrap. It uses Github APIs to find about the users in a github org and the details of individual members.
 
+![overview](https://cldup.com/2IPnTfiJfT-1200x1200.png)
+![member-detail](https://cldup.com/UXDQYRSILE.png)
+
 In order to run the code on your machine:
 
 ```
@@ -13,5 +16,6 @@ yarn start
 # In order to create production buid:
 yarn build
 ```
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
