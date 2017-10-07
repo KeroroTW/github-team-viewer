@@ -18,7 +18,7 @@ class App extends Component {
     this.setState({'github': []});
     let org = event.target.value;
     let githubAPIURL = 'https://api.github.com/orgs/' + org + '/members?client_id=2ee21061ca9ec6085e38&&client_secret=f0f906d1f5f02623a010884370655da4595d301d';
-    var self = this;
+    const self = this;
     fetch(githubAPIURL).then(function (response) {
       return response.json();
     }).then(function (json) {

@@ -4,7 +4,7 @@ import './SearchInput.css';
 class SearchInput extends Component  {
   handleChange =  (event) => {
     this.props.textChange(event);
-  }
+  };
 
   render() {
     return (

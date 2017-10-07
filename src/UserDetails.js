@@ -14,11 +14,11 @@ class UserDetails extends Component {
 
   render() {
     let userEmail = this.props.userdata.email;
-    var emailComponent = null;
+    let emailComponent = null;
     if (userEmail) {
       emailComponent =   <li className="list-group-item"><Mailto email={userEmail} obfuscate={true}>{userEmail}</Mailto></li>;
     }
-    var blogComponent = null;
+    let blogComponent = null;
     if (this.props.userdata.blog) {
       blogComponent = <li className="list-group-item"><a href={this.props.userdata.blog} target="_blank" className="card-link">{this.props.userdata.blog}</a></li>;
     }
