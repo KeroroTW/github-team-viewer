@@ -37,7 +37,7 @@ class GithubUser extends Component {
     return (
       <div className="col userContainer">
         <img src={avatar_url} onClick={this.getUserData.bind(this)} className="profile-picture" alt=""/>
-        <p>github: <a href={this.props.data.html_url} target='_blank'>@{this.props.data.login}</a> </p>
+        <a href={this.props.data.html_url} target='_blank'>@{this.props.data.login}</a>
         {this.state.showCard && userDetails}
       </div>
     );

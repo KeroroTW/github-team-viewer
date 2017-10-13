@@ -1,3 +1,7 @@
 .closeCards, .helptext  {
     margin-top: 20px;
 }
+
+.helptext {
+    text-align: left;
+}

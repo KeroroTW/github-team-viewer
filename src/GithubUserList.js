@@ -7,7 +7,7 @@ class GithubUserList extends Component {
     let userRows = [];
     let helpText = null;
     if (this.props.datalist.length !== 0) {
-      helpText = <h5 className="helptext">Click on the profile image to get more  details</h5>;
+      helpText = <h5 className="helptext">Click on picture to know more..</h5>;
       this.props.datalist.forEach(function (value, key) {
         userRows.push(<GithubUser key={key} data={value}/>);
       });
