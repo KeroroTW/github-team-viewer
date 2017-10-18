@@ -8,10 +8,8 @@ class SearchInput extends Component  {
 
   render() {
     return (
-      <div className="component-search-input">
-        <div>
-          <input className="form-control search-input pull-left" placeholder="eg: github" onChangeCapture={this.handleChange} />
-        </div>
+      <div className="container-fluid component-search-input">
+        <input className="form-control search-input pull-left col-md-3" placeholder="eg: github" onChangeCapture={this.handleChange} />
       </div>
     )
   }
